@@ -7,6 +7,7 @@ const port = process.env.PORT;
 app.get('/', (req, res) => {
     res.write('TEST GITHUB DEPLOY 3');
     res.write('Second string::');
+    res.flush();
 });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
